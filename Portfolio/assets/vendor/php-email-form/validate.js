@@ -91,7 +91,7 @@
             }
             break;
         }
-        i.next('.validate').html((ierror ? (i.attr('data-msg') != undefined ? i.attr('data-msg') : 'wrong Input') : '')).show('blind');
+        i.next('.validate').html((ierror ? (i.attr('data-msg') != undefined ? i.attr('data-msg') : '') : '')).show('blind');
       }
     });
     if (ferror) return false;

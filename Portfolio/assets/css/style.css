@@ -247,8 +247,9 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/hero-bg.jpg") top right no-repeat;
+  background: url("../img/giphy") top right no-repeat;
   background-size: cover;
+  background-position: top 200px ;
   position: relative;
 }
 
@@ -1109,6 +1110,24 @@ section {
     padding-top: 20px;
   }
 }
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  }
+  
+  .div1 { grid-area: 1 / 1 / 2 / 2;
+    width: 45%;
+  }
+  .div2 { grid-area: 1 / 2 / 2 / 3;
+    width: 45%;
+  }
+  .div3 { grid-area: 1 / 3 / 2 / 4;
+    width: 45%;
+  }
 
 /*--------------------------------------------------------------
 # Footer
